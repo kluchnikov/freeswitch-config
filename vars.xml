@@ -178,7 +178,7 @@
        If unspecified, the bind_server_ip value is used.
        Used by: sofia.conf.xml dingaling.conf.xml
   -->
-  <X-PRE-PROCESS cmd="set" data="external_sip_ip=stun:stun.freeswitch.org"/>
+  <X-PRE-PROCESS cmd="set" data="external_sip_ip=172.44.4.46"/>
 
   <!-- unroll-loops
        Used to turn on sip loopback unrolling.
@@ -264,4 +264,10 @@
   <X-PRE-PROCESS cmd="set" data="external_tls_port=5081"/>
   <X-PRE-PROCESS cmd="set" data="external_ssl_enable=false"/>
   <X-PRE-PROCESS cmd="set" data="external_ssl_dir=$${base_dir}/conf/ssl"/>
+
+  <X-PRE-PROCESS cmd="set" data="openbts_db_loc=/var/lib/asterisk/sqlite3dir/sqlite3.db"/>
+  <X-PRE-PROCESS cmd="set" data="smqueue_port=5063"/>
+  <X-PRE-PROCESS cmd="set" data="smqueue_host=172.44.4.46"/>
+  <X-PRE-PROCESS cmd="set" data="smqueue_profile=internal"/>
+
 </include>
