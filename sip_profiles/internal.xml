@@ -50,7 +50,7 @@
     <param name="sip-capture" value="no"/>
 
     <!-- Use presence_map.conf.xml to convert extension regex to presence protos for routing -->
-    <!-- <param name="presence-proto-lookup" value="true"/> -->
+    <param name="presence-proto-lookup" value="false"/>
 
 
     <!-- Don't be picky about negotiated DTMF just always offer 2833 and accept both 2833 and INFO -->
@@ -128,7 +128,7 @@
         and create this localnet.auto ACL for this.
     -->
     <param name="local-network-acl" value="localnet.auto"/>
-    <!--<param name="apply-register-acl" value="domains"/>-->
+    <param name="apply-register-acl" value="domains"/>
     <!--<param name="dtmf-type" value="info"/>-->
 
 
