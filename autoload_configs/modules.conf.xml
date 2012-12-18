@@ -66,6 +66,8 @@
     <!--<load module="mod_random"/>-->
     <load module="mod_httapi"/>
 
+    <load module="mod_sms"/>
+
     <!-- SNOM Module -->
     <!--<load module="mod_snom"/>-->
 
@@ -108,7 +110,7 @@
     <!-- Languages -->
     <load module="mod_spidermonkey"/>
     <!-- <load module="mod_perl"/> -->
-    <!-- <load module="mod_python"/> -->
+    <load module="mod_python"/>
     <!-- <load module="mod_java"/> -->
     <load module="mod_lua"/>
 
